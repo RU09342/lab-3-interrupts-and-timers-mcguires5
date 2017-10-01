@@ -1,0 +1,30 @@
+#include <msp430.h> 
+
+
+/**
+ * main.c
+ */
+int main(void)
+{
+    WDTCTL = WDTPW | WDTHOLD;   // stop watchdog timer
+    P1DIR &= ~(BIT1);   //Sets direction of P1 Bit 1 to Input
+    P1DIR |= (0x01);    //Sets direction of P1 Bit 0 to Output
+    P1IE |= (BIT1);       //Enables interrupts for P1 Bit 1
+    P1REN |= (BIT1);    //Enables the resistor for P1 Bit 1
+    P1OUT |= (BIT1);    //Sets the resistor for P1 Bit 1 to Pull Up
+    //P1GIE |= (BIT1);    //Enables general interrupts
+    P1IFG &= ~(BIT1);   //The interrupt flag is cleared
+
+    __enable_interrupt();   //enable all interrupts
+    for(;;)
+    {}
+}
+//Port 1 interrupt service routine
+#pragma vector=PORT1_VECTOR
+__interrupt void Port_1(void)
+{
+    P1OUT ^= BIT0;
+    P1IFG &= ~BIT1;
+    P1IES ^= BIT1; //Toggle the interrupt edge
+}
+
