@@ -4,16 +4,21 @@
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
 'Building file: ../main.c'
 'Invoking: MSP430 Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/baseb_000/Desktop/Embeded Labs/lab-3-interrupts-and-timers-mcguires5/Button Based Delay/Lab3ButtonBasedF5529" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
-
->> Compilation failure
-subdir_rules.mk:9: recipe for target 'main.obj' failed
-"../main.c", line 16: error #20: identifier "DIVS" is undefined
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/baseb/Desktop/Embeded Labs/lab-3-interrupts-and-timers-mcguires5/Button Based Delay/Lab3ButtonBasedF5529" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
 "../main.c", line 54: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
 "../main.c", line 5: remark #1535-D: (ULP 8.1) variable "OverFlowTimes" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
 "../main.c", line 6: remark #1535-D: (ULP 8.1) variable "NumOfOverFlow" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
-1 error detected in the compilation of "../main.c".
-gmake: *** [main.obj] Error 1
-gmake: Target 'all' not remade because of errors.
+'Finished building: ../main.c'
+' '
+'Building target: Lab3ButtonBasedF5529.out'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"Lab3ButtonBasedF5529.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab3ButtonBasedF5529_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab3ButtonBasedF5529.out" "./main.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Lab3ButtonBasedF5529.out'
+' '
 
 **** Build Finished ****

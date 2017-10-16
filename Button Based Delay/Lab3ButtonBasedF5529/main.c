@@ -13,7 +13,6 @@ void main(void)
     TA0CTL = TASSEL_2 + MC_1 + ID_3;           // SMCLK/8, upmode
     TA0CCTL0 = CCIE;
     TA0CCR0 =  0xFFFF;  //Number timer counts to
-    DIVS = 3;
     P1DIR |= (BIT0);
     P4DIR |= (BIT7);
     P4OUT |= (BIT7);
@@ -51,6 +50,7 @@ __interrupt void Port_2(void)
         P1OUT &= ~BIT0;
         TA0CCR0 = TA0R - initialTime;
     }
+    //Simple Debounce
     __delay_cycles(1000);
     P2IES ^= BIT1;
     P2IFG &= ~BIT1;

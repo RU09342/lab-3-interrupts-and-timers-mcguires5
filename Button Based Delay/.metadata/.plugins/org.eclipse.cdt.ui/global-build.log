@@ -460,3 +460,273 @@ gmake: *** [main.obj] Error 1
 gmake: Target 'all' not remade because of errors.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project Lab3ButtonBasedFR3211 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmspx --use_hw_mpy=none --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/baseb/Desktop/Embeded Labs/lab-3-interrupts-and-timers-mcguires5/Button Based Delay/Lab3ButtonBasedFR3211" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2311__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 1: fatal error #1965: cannot open source file "msP230.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3ButtonBasedFR3211 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmspx --use_hw_mpy=none --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/baseb/Desktop/Embeded Labs/lab-3-interrupts-and-timers-mcguires5/Button Based Delay/Lab3ButtonBasedFR3211" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2311__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 12: error #20: identifier "WDTCTL" is undefined
+"../main.c", line 12: error #20: identifier "WDTPW" is undefined
+"../main.c", line 12: error #20: identifier "WDTHOLD" is undefined
+"../main.c", line 13: error #20: identifier "P1DIR" is undefined
+"../main.c", line 13: error #20: identifier "BIT0" is undefined
+"../main.c", line 13: error #20: identifier "BIT6" is undefined
+"../main.c", line 14: error #20: identifier "P1OUT" is undefined
+"../main.c", line 16: error #20: identifier "TB0CTL" is undefined
+"../main.c", line 16: error #20: identifier "TASSEL_2" is undefined
+"../main.c", line 16: error #20: identifier "MC_1" is undefined
+"../main.c", line 16: error #20: identifier "ID_3" is undefined
+"../main.c", line 17: error #20: identifier "TB0CCTL0" is undefined
+"../main.c", line 17: error #20: identifier "CCIE" is undefined
+"../main.c", line 18: error #20: identifier "TB0CCR0" is undefined
+"../main.c", line 20: error #20: identifier "P2DIR" is undefined
+"../main.c", line 21: error #20: identifier "P2OUT" is undefined
+"../main.c", line 22: error #20: identifier "P1IE" is undefined
+"../main.c", line 22: error #20: identifier "BIT1" is undefined
+"../main.c", line 23: error #20: identifier "P1IES" is undefined
+"../main.c", line 24: error #20: identifier "P1REN" is undefined
+"../main.c", line 27: error #20: identifier "P1IFG" is undefined
+"../main.c", line 31: error #20: identifier "GIE" is undefined
+"../main.c", line 37: warning #2580-D: pragma vector= accepts numeric arguments or "unused_interrupts" but not TIMER0_B0_VECTOR
+"../main.c", line 40: error #20: identifier "P2OUT" is undefined
+"../main.c", line 40: error #20: identifier "BIT0" is undefined
+"../main.c", line 45: warning #2580-D: pragma vector= accepts numeric arguments or "unused_interrupts" but not PORT1_VECTOR
+"../main.c", line 48: error #20: identifier "P2IES" is undefined
+"../main.c", line 48: error #20: identifier "BIT1" is undefined
+"../main.c", line 49: error #20: identifier "TB0R" is undefined
+"../main.c", line 50: error #20: identifier "TA0R" is undefined
+"../main.c", line 51: error #20: identifier "P1OUT" is undefined
+"../main.c", line 51: error #20: identifier "BIT0" is undefined
+"../main.c", line 53: error #20: identifier "P1OUT" is undefined
+"../main.c", line 53: error #20: identifier "BIT0" is undefined
+"../main.c", line 54: error #20: identifier "TB0CCR0" is undefined
+"../main.c", line 54: error #20: identifier "TA0R" is undefined
+"../main.c", line 58: error #20: identifier "P1IES" is undefined
+"../main.c", line 59: error #20: identifier "P1IFG" is undefined
+"../main.c", line 57: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 8: remark #1535-D: (ULP 8.1) variable "OverFlowTimes" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 9: remark #1535-D: (ULP 8.1) variable "NumOfOverFlow" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+36 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3ButtonBasedFR3211 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmspx --use_hw_mpy=none --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/baseb/Desktop/Embeded Labs/lab-3-interrupts-and-timers-mcguires5/Button Based Delay/Lab3ButtonBasedFR3211" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2311__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 1: fatal error #1965: cannot open source file "msP230.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3ButtonBasedFR3211 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmspx --use_hw_mpy=none --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/baseb/Desktop/Embeded Labs/lab-3-interrupts-and-timers-mcguires5/Button Based Delay/Lab3ButtonBasedFR3211" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2311__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 18: error #20: identifier "TASSEL_2" is undefined
+"../main.c", line 52: error #20: identifier "TA0R" is undefined
+"../main.c", line 56: error #20: identifier "TA0R" is undefined
+"../main.c", line 59: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 10: remark #1535-D: (ULP 8.1) variable "OverFlowTimes" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 11: remark #1535-D: (ULP 8.1) variable "NumOfOverFlow" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3ButtonBasedFR3211 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmspx --use_hw_mpy=none --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/baseb/Desktop/Embeded Labs/lab-3-interrupts-and-timers-mcguires5/Button Based Delay/Lab3ButtonBasedFR3211" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2311__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 59: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 10: remark #1535-D: (ULP 8.1) variable "OverFlowTimes" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 11: remark #1535-D: (ULP 8.1) variable "NumOfOverFlow" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: ../main.c'
+' '
+'Building target: Lab3ButtonBasedFR3211.out'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmspx --use_hw_mpy=none --advice:power=all --advice:hw_config=all --define=__MSP430FR2311__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab3ButtonBasedFR3211.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab3ButtonBasedFR3211_linkInfo.xml" --use_hw_mpy=none --rom_model -o "Lab3ButtonBasedFR3211.out" "./main.obj" "../lnk_msp430fr2311.cmd"  -llibc.a 
+<Linking>
+warning #10420-D: For FRAM devices, at start up, the GPIO power-on default high-impedance mode needs to be disabled to activate previously configured port settings. This can be done by clearing the LOCKLPM5 bit in PM5CTL0 register.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Lab3ButtonBasedFR3211.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3ButtonBasedFR3211 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+gmake[1]: 'Lab3ButtonBasedFR3211.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3ButtonBasedFR6968 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/baseb/Desktop/Embeded Labs/lab-3-interrupts-and-timers-mcguires5/Button Based Delay/Lab3ButtonBasedFR6968" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 59: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 10: remark #1535-D: (ULP 8.1) variable "OverFlowTimes" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 11: remark #1535-D: (ULP 8.1) variable "NumOfOverFlow" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: ../main.c'
+' '
+'Building target: Lab3ButtonBasedFR6968.out'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab3ButtonBasedFR6968.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab3ButtonBasedFR6968_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab3ButtonBasedFR6968.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+warning #10420-D: For FRAM devices, at start up, the GPIO power-on default high-impedance mode needs to be disabled to activate previously configured port settings. This can be done by clearing the LOCKLPM5 bit in PM5CTL0 register.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Lab3ButtonBasedFR6968.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3ButtonBasedG2553 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/baseb/Desktop/Embeded Labs/lab-3-interrupts-and-timers-mcguires5/Button Based Delay/Lab3ButtonBasedG2553" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 20: error #20: identifier "TB0CTL" is undefined
+"../main.c", line 20: error #20: identifier "TBSSEL_2" is undefined
+"../main.c", line 21: error #20: identifier "TB0CCTL0" is undefined
+"../main.c", line 22: error #20: identifier "TB0CCR0" is undefined
+"../main.c", line 41: warning #2580-D: pragma vector= accepts numeric arguments or "unused_interrupts" but not TIMER0_B0_VECTOR
+"../main.c", line 53: error #20: identifier "TB0R" is undefined
+"../main.c", line 58: error #20: identifier "TB0CCR0" is undefined
+"../main.c", line 58: error #20: identifier "TB0R" is undefined
+"../main.c", line 61: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 12: remark #1535-D: (ULP 8.1) variable "OverFlowTimes" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 13: remark #1535-D: (ULP 8.1) variable "NumOfOverFlow" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+7 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3ButtonBasedG2553 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/baseb/Desktop/Embeded Labs/lab-3-interrupts-and-timers-mcguires5/Button Based Delay/Lab3ButtonBasedG2553" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 61: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 12: remark #1535-D: (ULP 8.1) variable "OverFlowTimes" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 13: remark #1535-D: (ULP 8.1) variable "NumOfOverFlow" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: ../main.c'
+' '
+'Building target: Lab3ButtonBasedG2553.out'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Lab3ButtonBasedG2553.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab3ButtonBasedG2553_linkInfo.xml" --use_hw_mpy=none --rom_model -o "Lab3ButtonBasedG2553.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Lab3ButtonBasedG2553.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3ButtonBasedF5529 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/baseb/Desktop/Embeded Labs/lab-3-interrupts-and-timers-mcguires5/Button Based Delay/Lab3ButtonBasedF5529" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 54: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 5: remark #1535-D: (ULP 8.1) variable "OverFlowTimes" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 6: remark #1535-D: (ULP 8.1) variable "NumOfOverFlow" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: ../main.c'
+' '
+'Building target: Lab3ButtonBasedF5529.out'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"Lab3ButtonBasedF5529.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab3ButtonBasedF5529_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab3ButtonBasedF5529.out" "./main.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Lab3ButtonBasedF5529.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3ButtonBasedFR5994 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/baseb/Desktop/Embeded Labs/lab-3-interrupts-and-timers-mcguires5/Button Based Delay/Lab3ButtonBasedFR5994" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5994__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 61: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 12: remark #1535-D: (ULP 8.1) variable "OverFlowTimes" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 13: remark #1535-D: (ULP 8.1) variable "NumOfOverFlow" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: ../main.c'
+' '
+'Building target: Lab3ButtonBasedFR5994.out'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5994__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab3ButtonBasedFR5994.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_17.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab3ButtonBasedFR5994_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab3ButtonBasedFR5994.out" "./main.obj" "../lnk_msp430fr5994.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+warning #10420-D: For FRAM devices, at start up, the GPIO power-on default high-impedance mode needs to be disabled to activate previously configured port settings. This can be done by clearing the LOCKLPM5 bit in PM5CTL0 register.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 5 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 6 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 7 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 8 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10436-D: (ULP 6.3) Detected use of a device with a Low Energy Accelerator (LEA) but application does not appear to use LEA. Recommend offloading vector math and signal processing to LEA for improved performance.
+'Finished building target: Lab3ButtonBasedFR5994.out'
+' '
+
+**** Build Finished ****
