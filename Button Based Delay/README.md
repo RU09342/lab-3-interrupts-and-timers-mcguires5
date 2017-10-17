@@ -1,12 +1,26 @@
 # Button Based Delay
-Now that you have begun to familiarize yourself with the TIMER modules, why don't we make an interesting change to our code from the last lab.
+For this assignment we will use a the duration of a button being held to set a timer which will controll an LED. The LED is initially blinked at a rate of 10 kHz before the button has been pressed.  
 
-## Task
-Setup your microcontroller to initially blink and LED at a rate of 10Hz upon restarting or powering up. Then utilizing one of the buttons on board, a user should be able to set the delay or blinking rate of the LED by holding down a button. The duration in which the button is depressed should then become the new rate at which the LED blinks. As previously stated, you most likely will want to take advantage of the fact that TIMER modules exist and see if you can let them do a bulk of the work for you.
+## Boards Implemented On:
+* MSP430F5529
+* MSP430FR2311
+* MSP430FR5994
+* MSP430FR6989
+* MSP430G2553
 
-### Extra Work
-## Reset Button
-What is a piece of electronics without a reset button? Instead of relying on resetting your processor using the built in reset circuitry, why not instead use another button to reset the rate back to 10Hz.
+## Differences On Boards
+### MSP430F5529
+P2.1 is used for the button. P1.0 is used to identify when the button is pressed down. P4.7 is used to show the the output of the TimerA module.
 
-## Button Based Hertz
-Most likely using two buttons, what if instead of making a delay loop based on the time, the user could instead enter a mode where the number of times they pressed the button would become the number in Hz of the blinking rate? How do you think you would implement that with just one button?
+### MSP430FR2311
+P1.1 is used for the button. P1.0 is used to identify when the button is pressed down. P2.0 is used to show the the output of the TimerB module.
+
+### MSP430FR5994
+P5.6 is used for the button. P1.0 is used to identify when the button is pressed down. P1.1 is used to show the the output of the TimerA module.
+
+### MSP430FR6989
+P1.1 is used for the button. P1.0 is used to identify when the button is pressed down. P9.7 is used to show the the output of the TimerB module.
+
+### MSP430G2553
+P1.3 is used for the button. P1.0 is used to identify when the button is pressed down. P1.6 is used to show the the output of the TimerA module.
+

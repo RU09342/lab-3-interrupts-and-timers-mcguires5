@@ -500,3 +500,19 @@ Could not find device (or device not supported)
 !ENTRY com.ti.ccstudio.debug 1 0 2017-10-02 17:06:00.871
 !MESSAGE DS_ERROR: Error initializing emulator:
 Could not find MSP-FET430UIF on specified COM port
+!SESSION 2017-10-16 12:55:29.469 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product -data C:\Users\baseb_000\Desktop\Embeded Labs\lab-3-interrupts-and-timers-mcguires5\TIMER A Blink -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-10-16 12:55:49.474
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.ti.common.core 4 0 2017-10-16 12:55:51.147
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 4 0 2017-10-16 12:55:51.170
+!MESSAGE debugServerDir=C:/ti/ccsv7/ccs_base/DebugServer

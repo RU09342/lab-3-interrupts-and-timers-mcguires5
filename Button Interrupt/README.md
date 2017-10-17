@@ -22,6 +22,29 @@ I chose to trigger the interupt on the falling edge of the interupt, this is don
 '''c
 P1IES |= (BIT1);
 '''
+## Boards Implemented On:
+* MSP430F5529
+* MSP430FR2311
+* MSP430FR5994
+* MSP430FR6989
+* MSP430G2553
+
+## Differences On Boards
+### MSP430F5529
+P2.1 is used for the button. P1.0 is the LED used to identify when the button is pressed down. 
+
+### MSP430FR2311
+P1.1 is used for the button. P1.0 is the LED used to identify when the button is pressed down.
+
+### MSP430FR5994
+P5.6 is used for the button. P1.0 is the LED used to identify when the button is pressed down. 
+
+### MSP430FR6989
+P1.1 is used for the button. P1.0 is the LED used to identify when the button is pressed down.
+
+### MSP430G2553
+P1.3 is used for the button. P1.0 is the LED used to identify when the button is pressed down. 
+
 
 ### Energy Trace Analysis
 I have run the energy trace software inside code composer and have found that in active mode, when the processor and all timers are enabled it consumed an average of __ uW.
