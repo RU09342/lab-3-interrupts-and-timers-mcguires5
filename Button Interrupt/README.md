@@ -46,9 +46,7 @@ P1.1 is used for the button. P1.0 is the LED used to identify when the button is
 P1.3 is used for the button. P1.0 is the LED used to identify when the button is pressed down. 
 
 
-### Energy Trace Analysis
-I have run the energy trace software inside code composer and have found that in active mode, when the processor and all timers are enabled it consumed an average of __ uW.
-In LPM0 - __ uW
-In LPM1 - __ uW
-In LPM2 - __ uW
-In LPM3 - __ uW
+### Energy Trace Analysis (Extra work)
+I have run the energy trace software inside code composer on the FR5994 and have found that in active mode, when the processor and all timers are enabled it consumed an average of 396 uW. At the other low power modes the power consumption also varried and decrease as more of the processor was shut off for low power mode.
+In LPM0 - 300 uW
+In LPM1 - 130 uW

@@ -2,7 +2,7 @@
 
 
 
-unsigned int timerCount = 0;
+unsigned int count = 0;
 void main(void)
 {
     WDTCTL = WDTPW + WDTHOLD; // Stop watchdog timer
@@ -10,20 +10,26 @@ void main(void)
     P1OUT &= 0x00; // Set the LEDs off
 
                         // CCR0 interrupt enabled
-    TACTL = TASSEL_2 + MC_1 + ID_3;           // SMCLK/8, upmode
-    TA0CCTL0 = CCIE;
-    TA0CCR0 =  0xFFFF;  //Number timer counts to
+
+    CCTL0 = CCIE;
+    TACTL = TASSEL_2 + MC_1 + ID_3; // SMCLK/8, UPMODE
 
 
-    __bis_SR_register(GIE); // LPM0 with interrupts enabled
-    while(1)                      //Loop forever, we do  everything with interrupts!
-      {}
+    TACCR0 = 0xFFFF; // CCR0 = 65535 is the number that the clock counts to
+    //1250000/8 = 156250
+    //65535/156250 = 0.4 so the led toggles every 0.4 seconds
+    __enable_interrupt();
+
+    __bis_SR_register(LPM0 + GIE); // LPM0 with interrupts enabled
+
+
 }
 
 
-// Timer A0 interrupt service routine
 #pragma vector=TIMER0_A0_VECTOR
-__interrupt void TIMER0_A0_ISR (void)
+__interrupt void Timer0_A0 (void)
 {
-    P1OUT ^= BIT0;                            // Toggle P1.0
+
+    P1OUT ^= (BIT0 + BIT6); // Toggles LEDS
+
 }

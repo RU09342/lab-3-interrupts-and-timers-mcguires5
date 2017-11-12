@@ -1,0 +1,37 @@
+#include <msp430.h> 
+
+
+
+unsigned int count = 0;
+void main(void)
+{
+    WDTCTL = WDTPW + WDTHOLD; // Stop watchdog timer
+    P1DIR |= (BIT0 + BIT6);
+    P1OUT &= 0x00; // Set the LEDs off
+
+                        // CCR0 interrupt enabled
+
+    CCTL0 = CCIE;
+    TACTL = TASSEL_2 + MC_1 + ID_3; // SMCLK/8, UPMODE
+
+
+    TACCR0 = 125000/10; //Speed of clock/frequency
+
+    __enable_interrupt();
+
+    __bis_SR_register(LPM0 + GIE); // LPM0 with interrupts enabled
+
+
+}
+
+
+#pragma vector=TIMER0_A0_VECTOR
+__interrupt void Timer0_A0 (void)
+{
+    if(count >= 100) // 0.1 seconds 100 times, called every 10s
+    {
+        P1OUT ^= (BIT0 + BIT6); // Switch on the LEDs
+        count = 0; // Reset the counter variable
+    }
+    else count++; // Increment the counter variable until 10s
+}
